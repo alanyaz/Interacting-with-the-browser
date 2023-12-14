@@ -23,12 +23,12 @@ function checkGuess(clickedIndex) {
 
     if (clickedIndex === correctCardIndex) {
         setTimeout(() => {
-            alert("Congratulations! You found the correct card!");
+            alert("Congratulations! You have the correct card!");
         }, 200);
         endGame();
     } else {
         setTimeout(() => {
-            alert("Wrong choice! Try again.");
+            alert("Wrong choice! Please try again.");
         }, 200);
 
         cards[clickedIndex].style.pointerEvents = 'none';
